@@ -1,0 +1,78 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{0331009E-A4B1-487A-B86A-787CD3ABD15B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{F1FAF7EE-9C65-4F2F-9FDA-06DD856330F9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "docs", "docs", "{6964DB8E-0BFC-445B-96B3-086142B067A9}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Core", "Core", "{DAA5B47F-4C1A-4C53-8820-A125DAF4B982}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Presentation", "Presentation", "{FD043C66-3455-47C1-B4EA-EC1250643B80}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Core.Common", "src\Core\SnappExam.Core.Common\SnappExam.Core.Common.csproj", "{3B3F4AA4-8829-465C-979F-48FE30FC3B61}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Core.Application", "src\Core\SnappExam.Core.Application\SnappExam.Core.Application.csproj", "{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Core.Domain", "src\Core\SnappExam.Core.Domain\SnappExam.Core.Domain.csproj", "{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Infrastructure.Persistence.EF", "src\Infrastructure\SnappExam.Infrastructure.Persistence.EF\SnappExam.Infrastructure.Persistence.EF.csproj", "{A7704C60-03D4-4FAE-B96E-D5EF7883141F}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Presentation.Api", "src\Presentation\SnappExam.Presentation.Api\SnappExam.Presentation.Api.csproj", "{5677EF64-47BB-4A23-81C3-881081AECC68}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnappExam.Infrastructure.Configuration", "SnappExam.Infrastructure.Configuration\SnappExam.Infrastructure.Configuration.csproj", "{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{3B3F4AA4-8829-465C-979F-48FE30FC3B61}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3B3F4AA4-8829-465C-979F-48FE30FC3B61}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3B3F4AA4-8829-465C-979F-48FE30FC3B61}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3B3F4AA4-8829-465C-979F-48FE30FC3B61}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A7704C60-03D4-4FAE-B96E-D5EF7883141F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A7704C60-03D4-4FAE-B96E-D5EF7883141F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A7704C60-03D4-4FAE-B96E-D5EF7883141F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A7704C60-03D4-4FAE-B96E-D5EF7883141F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5677EF64-47BB-4A23-81C3-881081AECC68}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5677EF64-47BB-4A23-81C3-881081AECC68}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5677EF64-47BB-4A23-81C3-881081AECC68}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5677EF64-47BB-4A23-81C3-881081AECC68}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DAA5B47F-4C1A-4C53-8820-A125DAF4B982} = {0331009E-A4B1-487A-B86A-787CD3ABD15B}
+		{5FD65BB8-612C-4480-B8A6-A9A63F81E8A3} = {0331009E-A4B1-487A-B86A-787CD3ABD15B}
+		{FD043C66-3455-47C1-B4EA-EC1250643B80} = {0331009E-A4B1-487A-B86A-787CD3ABD15B}
+		{3B3F4AA4-8829-465C-979F-48FE30FC3B61} = {DAA5B47F-4C1A-4C53-8820-A125DAF4B982}
+		{AA7AE5F6-AD17-4B2E-BF33-CE8239EA3CAD} = {DAA5B47F-4C1A-4C53-8820-A125DAF4B982}
+		{0B4DE07B-1AF6-4452-B4B3-EB22A833BBD1} = {DAA5B47F-4C1A-4C53-8820-A125DAF4B982}
+		{A7704C60-03D4-4FAE-B96E-D5EF7883141F} = {5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}
+		{5677EF64-47BB-4A23-81C3-881081AECC68} = {FD043C66-3455-47C1-B4EA-EC1250643B80}
+		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619} = {5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F36F18E0-6FFD-47F1-89F5-4CC4E984FF73}
+	EndGlobalSection
+EndGlobal

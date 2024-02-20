@@ -15,3 +15,6 @@
 /src/Infrastructure/SnappExam.Infrastructure.Persistence.EF/obj
 /src/Presentation/SnappExam.Presentation.Api/bin/Debug/net8.0
 /src/Presentation/SnappExam.Presentation.Api/obj
+/src/Infrastructure/SnappExam.Infrastructure.Caching.InMemory/bin/Debug/net8.0
+/src/Infrastructure/SnappExam.Infrastructure.Caching.InMemory/obj
+/tests/SnappExam.Test/obj

@@ -38,7 +38,7 @@ namespace SnappExam.Presentation.Api.Controllers
         }
 
         [HttpGet]
-        [ResponseCache]
+        //[ResponseCache]
         public async Task<ApiResult<GetProdutDto>> Get([FromQuery] GetProductByIdCommand command, CancellationToken cancellationToken)
         {
             var result = await _mediator.Send(command, cancellationToken);

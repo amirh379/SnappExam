@@ -12,6 +12,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\..\Infrastructure\SnappExam.Infrastructure.Caching.InMemory\SnappExam.Infrastructure.Caching.InMemory.csproj" />
     <ProjectReference Include="..\..\Infrastructure\SnappExam.Infrastructure.Persistence.EF\SnappExam.Infrastructure.Persistence.EF.csproj" />
     <ProjectReference Include="..\SnappExam.Core.Domain\SnappExam.Core.Domain.csproj" />
   </ItemGroup>

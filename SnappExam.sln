@@ -25,7 +25,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Infrastructure.Pe
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Presentation.Api", "src\Presentation\SnappExam.Presentation.Api\SnappExam.Presentation.Api.csproj", "{5677EF64-47BB-4A23-81C3-881081AECC68}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnappExam.Infrastructure.Configuration", "SnappExam.Infrastructure.Configuration\SnappExam.Infrastructure.Configuration.csproj", "{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SnappExam.Infrastructure.Configuration", "SnappExam.Infrastructure.Configuration\SnappExam.Infrastructure.Configuration.csproj", "{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnappExam.Test", "tests\SnappExam.Test\SnappExam.Test.csproj", "{A38B3243-F077-44A5-9CBA-FA177F69FAC7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SnappExam.Infrastructure.Caching.InMemory", "src\Infrastructure\SnappExam.Infrastructure.Caching.InMemory\SnappExam.Infrastructure.Caching.InMemory.csproj", "{37A89995-79BB-40EA-B188-E6F9758370EC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -57,6 +61,14 @@ Global
 		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A38B3243-F077-44A5-9CBA-FA177F69FAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A38B3243-F077-44A5-9CBA-FA177F69FAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A38B3243-F077-44A5-9CBA-FA177F69FAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A38B3243-F077-44A5-9CBA-FA177F69FAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{37A89995-79BB-40EA-B188-E6F9758370EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{37A89995-79BB-40EA-B188-E6F9758370EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{37A89995-79BB-40EA-B188-E6F9758370EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{37A89995-79BB-40EA-B188-E6F9758370EC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -71,6 +83,8 @@ Global
 		{A7704C60-03D4-4FAE-B96E-D5EF7883141F} = {5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}
 		{5677EF64-47BB-4A23-81C3-881081AECC68} = {FD043C66-3455-47C1-B4EA-EC1250643B80}
 		{3D69CCE4-B3BE-4EA2-8394-EF77CCD60619} = {5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}
+		{A38B3243-F077-44A5-9CBA-FA177F69FAC7} = {F1FAF7EE-9C65-4F2F-9FDA-06DD856330F9}
+		{37A89995-79BB-40EA-B188-E6F9758370EC} = {5FD65BB8-612C-4480-B8A6-A9A63F81E8A3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {F36F18E0-6FFD-47F1-89F5-4CC4E984FF73}

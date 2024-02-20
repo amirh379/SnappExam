@@ -9,6 +9,7 @@ var builder = WebApplication.CreateBuilder(args);
 var configuration = builder.Configuration;
 
 
+builder.Services.AddMemoryCache();
 
 builder.Services.AddControllers();
 
@@ -34,6 +35,9 @@ if (app.Environment.IsDevelopment())
 app.UseHttpsRedirection();
 
 app.UseAuthorization();
+
+app.UseResponseCaching();
+
 
 app.MapControllers();
 

@@ -6,5 +6,10 @@ namespace SnappExam.Core.Application.Commands
     public record GetProductByIdCommand : IRequest<GetProdutDto>
     {
         public int Id { get; set; }
+
+        public GetProductByIdCommand(int id)
+        {
+            Id = id;
+        }
     }
 }

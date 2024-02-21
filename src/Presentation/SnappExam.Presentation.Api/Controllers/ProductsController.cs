@@ -23,8 +23,10 @@ namespace SnappExam.Presentation.Api.Controllers
         [HttpPost]
         public async Task<ApiResult<string>> Post(AddProductCommand command, CancellationToken cancellationToken)
         {
+            //Manual validation is for avoid using auto validation and not involving the application layer
             ValidationResult result = await _validator.ValidateAsync(command);
             if (!result.IsValid) return BadRequest(result.Errors);
+
             var id = await _mediator.Send(command, cancellationToken);
             return Ok(id);
         }

@@ -15,7 +15,12 @@ namespace SnappExam.Infrastructure.Persistence.EF.Repositories
             _entities = context.Set<T>();
         }
 
-        public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken)        
+        public async Task<List<T>> GetAll(CancellationToken cancellationToken)
+        {
+            return await _entities.ToListAsync();
+        }
+
+        public async Task<T> GetByIdAsync(int id, CancellationToken cancellationToken)
         {
             return await _entities.FirstAsync(d => d.Id == id);
         }

@@ -6,5 +6,6 @@ namespace SnappExam.Infrastructure.Persistence.EF.Contracts
     {
         Task<T> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task Insert(T entity, CancellationToken cancellationToken);
+        Task<List<T>> GetAll(CancellationToken cancellationToken);
     }
 }

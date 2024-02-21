@@ -9,5 +9,6 @@ namespace SnappExam.Infrastructure.Persistence.EF.Contracts
         Task<Product> GetByIdAsync(int id, CancellationToken cancellationToken);
         Task<GetProdutDto> GetProductDtoByIdAsync(int id, CancellationToken cancellationToken);
         Task UpdateAsync(Product product, CancellationToken cancellationToken);
+        Task<bool> IsProductTitleExists(string title, CancellationToken cancellationToken);
     }
 }

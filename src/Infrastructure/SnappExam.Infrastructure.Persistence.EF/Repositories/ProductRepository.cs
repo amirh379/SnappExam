@@ -36,6 +36,11 @@ namespace SnappExam.Infrastructure.Persistence.EF.Repositories
                 .FirstAsync(p => p.Id == id, cancellationToken);
         }
 
+        public async Task<bool> IsProductTitleExists(string title, CancellationToken cancellationToken)
+        {
+            return await _context.Products.AnyAsync(z => z.Title == title, cancellationToken);
+        }
+
         public async Task UpdateAsync(Product product, CancellationToken cancellationToken)
         {
             _context.Products.Update(product);

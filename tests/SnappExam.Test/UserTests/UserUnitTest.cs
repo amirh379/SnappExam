@@ -1,26 +1,20 @@
-﻿using Infrastructure.Persistence.Ef;
-using Moq;
-using Moq.EntityFrameworkCore;
+﻿using DGLand.Logistic.Tests.Persistence;
 using SnappExam.Core.Domain.Models.Users;
 using SnappExam.Infrastructure.Persistence.EF.Contracts;
 using SnappExam.Infrastructure.Persistence.EF.Repositories;
-using SnappExam.Test.Fixture;
 
 namespace SnappExam.Test.UserTests
 {
-    public class UserUnitTest
+    public class UserUnitTest : BasePersistenceTest
     {
-        IRepository<User> _repository;
-
+        
         [Fact]
         public async Task ShouldBeNotNull()
         {
             // Arrange
-            var employeeContextMock = new Mock<ApplicationDbContext>();
-            employeeContextMock.Setup(x => x.Users).ReturnsDbSet(FakeData.GetFakeUserList());
-
-            //Act
-            _repository = new Repository<User>(employeeContextMock.Object);
+            IRepository<User>  _repository = new Repository<User>(_DbContext);
+            
+            //Act            
             var employees = await _repository.GetAll(default);
 
             //Assert
